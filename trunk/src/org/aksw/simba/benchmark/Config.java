@@ -16,7 +16,7 @@ public class Config {
 	//-------SPARQL constructs ------
 	public static boolean UNION  = true ;
 	public static boolean FILTER  = true ;
-	public static boolean OPTIONAL  = true ;
+	public static boolean OPTIONAL  = true;
 	public static boolean DISTINCT  = true ;
 	public static boolean ORDERBY  = true ;
 	public static boolean GROUPBY  = true ;

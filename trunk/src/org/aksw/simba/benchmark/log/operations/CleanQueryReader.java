@@ -11,17 +11,17 @@ import org.aksw.simba.benchmark.Config;
 import org.aksw.simba.benchmark.clustring.QueryClustering;
 
 public class CleanQueryReader {
-
+  public static int length;
 	public static void main(String[] args) throws IOException {
 		String queryFileWithStats = "CleanQueries.txt";
 		Map<String, Double[]> normalizedVectors = 	getNormalizedFeaturesVectors(queryFileWithStats);
 		QueryClustering qc = new QueryClustering();
-		System.err.println(qc.getPrototypicalQueries(normalizedVectors, 10));
+		System.err.println(qc.getPrototypicalQueries(normalizedVectors, 50));
 	}
 	@SuppressWarnings("resource")
 	public static Map<String, Double[]> getNormalizedFeaturesVectors(String queryFileWithStats) throws IOException {
 		Map<String, Double[]> vectors = new HashMap<String, Double[]>();
-		int length = getVectorLength();
+		 length = getVectorLength();
 		Double [] maxIndexVal = new Double[length]; 
 		for(int i=0;i<length;i++)
 			maxIndexVal[i] = 0d;
@@ -30,10 +30,13 @@ public class CleanQueryReader {
 		//	long count = 0;
 		String line;
 		System.out.println("Feature vectors loading in progress...");
-		br.readLine();br.readLine();
+		br.readLine();
+		String queryNumber = br.readLine();
 		while ((line = br.readLine()) != null && !line.equals(" #--end---"))
 		{
-			String queryFeatures = br.readLine()+"\n";  // query type
+			String queryFeatures = br.readLine()+"\n";  // query number
+			String queryNumberLine [] = line.split(":");
+			queryNumber = queryNumberLine[1];
 			//System.out.println(line);
 			Double [] vector = new Double[length]; 
 			int index = 0;
@@ -215,9 +218,15 @@ public class CleanQueryReader {
 					if(line.equals(" #--end---"))
 						break;
 				}
-				vectors.put(queryFeatures+query, vector);
-				//System.out.println(vector.length);
-				//System.out.println(query);
+				//vectors.put(query, vector);
+				//if(vectors.keySet().contains(queryNumber))
+				//	System.out.println("Duplicate flag on");
+				//if(queryNumber == null)
+					//System.out.println("query Number problem");
+				vectors.put(queryNumber, vector);
+				//if(length!=vector.length)
+				//System.err.println("Problem with vector lenghty for query no: "+ queryNumber);
+			//	System.out.println(queryNumber);
 			}
 			// System.out.println(count++);
 		}
@@ -239,6 +248,7 @@ public class CleanQueryReader {
 			}
 			normalizedVectors.put(query, vector);
 		}
+		vectors.clear();
 		return normalizedVectors;
 	}
 	public static int getVectorLength() {

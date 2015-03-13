@@ -11,16 +11,19 @@ public class QuerySelecter {
 
 	public static void main(String[] args) throws IOException {
 		String queryFileWithStats = "CleanQueries.txt";
+		long curTime = System.currentTimeMillis();
 		Map<String, Double[]> normalizedVectors = 	CleanQueryReader.getNormalizedFeaturesVectors(queryFileWithStats);
 		QueryClustering qc = new QueryClustering();
-		Set<String> queries = qc.getPrototypicalQueries(normalizedVectors, 5);
-		int count = 1;
-		for(String query:queries)
-		{
-			String [] qryParts = query.split("Query String:");
-			System.out.println(count+":----------------------\nQuery Features: \n\n"+qryParts[0]+ "\nQuery: \n"+qryParts[1]);
-			count++;
-		}
+		Set<String> queries = qc.getPrototypicalQueries(normalizedVectors,20);
+		System.out.println("Queries Ids: "+ queries+ "\nTotal Queries: " + queries.size());
+	//	int count = 1;
+//		for(String query:queries)
+//		{
+//			//String [] qryParts = query.split("Query String:");
+//			System.out.println(count+":----------------------\nQuery Features: \n\n"+qryParts[0]+ "\nQuery: \n"+qryParts[1]);
+//			count++;
+//		}
+		System.out.println("Benchmark generation time (sec): "+(System.currentTimeMillis()-curTime)/1000);
 
 	}
 
