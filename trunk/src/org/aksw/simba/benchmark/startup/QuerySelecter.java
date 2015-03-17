@@ -10,7 +10,8 @@ import org.aksw.simba.benchmark.log.operations.CleanQueryReader;
 public class QuerySelecter {
 
 	public static void main(String[] args) throws IOException {
-		String queryFileWithStats = "CleanQueries.txt";
+//-----		
+String queryFileWithStats = "CleanQueries.txt";
 		long curTime = System.currentTimeMillis();
 		Set<String> queries = getBenchmarkQueries(queryFileWithStats,20);
 		System.out.println("Total Queries: " + queries.size());
