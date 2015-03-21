@@ -1,0 +1,1046 @@
+#-------------------------------------------------------
+Query No: 1
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A++++prefix+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E+%0A++++ASK+WHERE+%7B%3Fx+%3Fp+%3Fo+.+filter+%28%3Fo%3Dqb%3AObservation+%7C%7C+%3Fo%3Dqb%3ADataset+%29%7D%0A%09
+#-------------------------------------------------------
+Query No: 2
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fpublicacao+akt%3Ahas-title+%3Ftitulo+%7D%0A+
+#-------------------------------------------------------
+Query No: 3
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.09552345101231051
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A%0A%09prefix+org%3A%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Forg%23%3E%0A%09prefix+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E+%0A%09prefix+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0A%09ASK+WHERE+%7B%3Fx+a+%3Fo+.+filter+%28%3Fo%3Dorg%3AOrganization+%7C%7C+%3Fo%3Dorg%3AOrganizationalUnit+%7C%7C+%3Fo%3Dfoaf%3AOrganization+%7C%7C+%3Fo%3Ddbpedia-owl%3AOrganisation%29%7D%0A%09
+#-------------------------------------------------------
+Query No: 4
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Chttp%3A%2F%2Fnonsensical.com%2F1%3E+%3Chttp%3A%2F%2Fnonsensical.com%2F2%3E+%3Chttp%3A%2F%2Fnonsensical.com%2F3%3E+%7D%0A+
+#-------------------------------------------------------
+Query No: 5
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.001322616746362804
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++owl%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fs+%3Fo+owl%3AThing+%7D%0A+
+#-------------------------------------------------------
+Query No: 6
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fautor+akt%3Afull-name+%22Scott+Shenker%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 7
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-web-address+%3Fweb+%7D%0A+
+#-------------------------------------------------------
+Query No: 8
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-title+%3Ftitulo+%7D%0A+
+#-------------------------------------------------------
+Query No: 9
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-date+%3Fvar+%7D%0A+
+#-------------------------------------------------------
+Query No: 10
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fautor+akt%3Afull-name+%22Alon+Y+Halevy%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 11
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt%3AArticle-Reference+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt%3AArticle-Reference+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 12
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2013+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt-date%3A2013+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 13
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt%3AJournal+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+akt%3AJournal+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 14
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fconferencia+akt%3Ahas-title+%22Workshop+on+Deductive+Databases%2C+JICSLP%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 15
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-date+akt-date%3A2013+%7D%0A+
+#-------------------------------------------------------
+Query No: 16
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-date+akt-date%3A2000+%7D%0A+
+#-------------------------------------------------------
+Query No: 17
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3FS+%3Fp+%3Fo+%7D%0A+
+#-------------------------------------------------------
+Query No: 18
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2006+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt-date%3A2006+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 19
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Aarticle-of-journal+%3Fjournal+%7D%0A+
+#-------------------------------------------------------
+Query No: 20
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-author+%3Fauthor+%7D%0A+
+#-------------------------------------------------------
+Query No: 21
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Fs+%3Chttp%3A%2F%2Fnonsensical.com%2F11%3E+%3Fo+%7D%0A+
+#-------------------------------------------------------
+Query No: 22
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Fs+%3Chttp%3A%2F%2Fnonsensical.com%2F8%3E+%3Chttp%3A%2F%2Fnonsensical.com%2F9%3E+%7D%0A+
+#-------------------------------------------------------
+Query No: 23
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Chttp%3A%2F%2Fnonsensical.com%2F10%3E+%3Fp+%3Fo+%7D%0A+
+#-------------------------------------------------------
+Query No: 24
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK+WHERE+%7B%3Fs+%3Fp+%3Fo%7D+
+#-------------------------------------------------------
+Query No: 25
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2000+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt-date%3A2000+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 26
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fconferencia+akt%3Ahas-title+%22Journal+of+Web+Semantics%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 27
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.322616746362804E-4
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+dc%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0D%0APREFIX+dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0APREFIX+swrc%3A+%3Chttp%3A%2F%2Fswrc.ontoware.org%2Fontology%23%3E%0D%0APREFIX+swrc-ext%3A+%3Chttp%3A%2F%2Fwww.cs.vu.nl%2F%7Emcaklein%2Fonto%2Fswrc_ext%2F2005%2F05%23%3E%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0APREFIX+ical%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F12%2Fcal%2Fical%23%3E%0D%0APREFIX+swc%3A+%3Chttp%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology%23%3E%0D%0AASK+%7B%3Fconference+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23type%3E+%3Chttp%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology%23ConferenceEvent%3E%0D%0A+.++%7D
+#-------------------------------------------------------
+Query No: 28
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2013+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+akt-date%3A2013+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 29
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK+%7B%3Fsub+%3Fpred+%3Fobj%7D+
+#-------------------------------------------------------
+Query No: 30
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.09552345101231051
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A++++prefix+lode%3A+%3Chttp%3A%2F%2Flinkedevents.org%2Fontology%2F%3E+%0A++++prefix+event%3A+%3Chttp%3A%2F%2Fpurl.org%2FNET%2Fc4dm%2Fevent.owl%23%3E+%0A++++prefix+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0A++++ASK+WHERE%7B%3Fx+a+%3Fo.+filter+%28%3Fo%3D+lode%3AEvent+%7C%7C+%3Fo%3Devent%3AEvent+%7C%7C+%3Fo%3Ddbpedia-owl%3AEvent%29%7D%0A%09
+#-------------------------------------------------------
+Query No: 31
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.5477617255061552
+UNION: Yes 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A++++prefix+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%3E%0A%0A++++ASK+WHERE+%7B%7B%3Fx+a+%3Fo.+filter%28%3Fo%3Dskos%3AConcept+%7C%7C+%3Fo%3Dskos%3AConceptScheme+%7C%7C+%0A++++%09%3Fo%3Dskos%3ACollection+%29%7D+UNION%7B+%3Fx+%3Fp+%3Fo.+filter%28%3Fp%3Dskos%3AfeatureCode+%7C%7C+%0A++++%09%3Fp%3Dskos%3AaltLabel+%7C%7C+%3Fp%3Dskos%3AprefLabel++%7C%7C+%3Fp%3Dskos%3ArelatedMatch%29%7D%7D%0A%09
+#-------------------------------------------------------
+Query No: 32
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Aarticle-of-journal+%3Fconferencia+%7D%0A+
+#-------------------------------------------------------
+Query No: 33
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 0
+Triple Patterns: 0
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+FILTER+%28+2+NOT+IN+%28%29+%29+%7D%0A+
+#-------------------------------------------------------
+Query No: 34
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A1993+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt-date%3A1993+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 35
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0012530945840539898
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+2012+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+2012+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 36
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 0
+Triple Patterns: 0
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B++%7D%0A+
+#-------------------------------------------------------
+Query No: 37
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2000+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+akt-date%3A2000+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 38
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Chttp%3A%2F%2Fnonsensical.com%2F4%3E+%3Chttp%3A%2F%2Fnonsensical.com%2F5%3E+%3Fo+%7D%0A+
+#-------------------------------------------------------
+Query No: 39
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Chttp%3A%2F%2Fnonsensical.com%2F6%3E+%3Fp+%3Chttp%3A%2F%2Fnonsensical.com%2F7%3E+%7D%0A+
+#-------------------------------------------------------
+Query No: 40
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fjournal+akt%3Ahas-title+%3Ftitulo+%7D%0A+
+#-------------------------------------------------------
+Query No: 41
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A1993+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+akt-date%3A1993+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 42
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+akt%3Ahas-author+%3Fautor+%7D%0A+
+#-------------------------------------------------------
+Query No: 43
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fjournal+akt%3Ahas-publication-reference+%3Fpublicacao+%7D%0A+
+#-------------------------------------------------------
+Query No: 44
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fartigo+rdf%3Atype+akt%3AArticle-Reference+%7D%0A+
+#-------------------------------------------------------
+Query No: 45
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+2012+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+2012+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 46
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.09552345101231051
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A++++PREFIX+vcard%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0A%09prefix+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E+%0A%09prefix+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0A%09ASK+WHERE+%7B%3Fx+a+%3Fo.+filter%28%3Fo+%3D+foaf%3APerson+%7C%7C+%3Fo%3Ddbpedia-owl%3APerson+%7C%7C%0A%09%09%3Fo%3Dvcard%3AIndividual%29+%7D%0A%09
+#-------------------------------------------------------
+Query No: 48
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fauthor+akt%3Afull-name+%22Takeo+Kanade%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 49
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt-date%3A2006+%3Fp+%3Fo%0A++++OPTIONAL%0A++++++%7B+%3Fs+%3Fp+akt-date%3A2006+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 50
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.09552345101231051
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fjournal+rdf%3Atype+%3Fvar+%7D%0A+
+#-------------------------------------------------------
+Query No: 51
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Fs+%3Fp+%3Chttp%3A%2F%2Fnonsensical.com%2F12%3E+%7D%0A+
+#-------------------------------------------------------
+Query No: 52
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+%3Fautor+akt%3Afull-name+%22Takeo+Kanade%22+%7D%0A+
+#-------------------------------------------------------
+Query No: 53
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 1
+Triple Patterns: 1
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 1.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK%0AWHERE%0A++%7B+%3Fs+%3Fp+%3Fo+%7D%0A+
+#-------------------------------------------------------
+Query No: 54
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.5477617255061552
+UNION: Yes 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: Yes 
+GROUP BY: No 
+Query String: %0A%0A%09prefix+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0A%09prefix+time%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0A%09PREFIX+intervals%3A+%3Chttp%3A%2F%2Freference.data.gov.uk%2Fdef%2Fintervals%2F%3E%0A%0A%09ASK+WHERE+%7B%7B%3Fx+a+%3Fo.+filter%28%3Fo%3Dtime%3ATemporalEntity+%7C%7C+%3Fo%3Dtime%3AInstant+%7C%7C+%0A%09%09%3Fo%3Dtime%3AInterval+%7C%7C+%3Fo%3Ddbpedia-owl%3ATimePeriod+%7C%7C+%3Fo%3Dtime%3ADateTimeInterval+%7C%7C+%3Fo%3Dintervals%3ACalendarInterval%29%0A%09%7D+%0A%09UNION%7B+%3Fx+%3Fp+%3Fo.+filter%28%3Fp%3Dtime%3Aduration+%7C%7C+%3Fp%3Dtime%3AhasBeginning+%7C%7C+%3Fp%3Dtime%3AinDateTime+%7C%7C+%3Fp%3Dtime%3AhasDateTimeDescription+%7C%7C+%3Fp%3Dtime%3AhasEnd%29%7D%7D%0A%09
+#-------------------------------------------------------
+Query No: 55
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 2
+Triple Patterns: 2
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: Yes 
+FILTER: No 
+GROUP BY: No 
+Query String: PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX++akt%3A++%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fportal%23%3E%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX++akt-date%3A+%3Chttp%3A%2F%2Fwww.aktors.org%2Fontology%2Fdate%23%3E%0A%0AASK%0AWHERE%0A++%7B+akt%3AJournal+rdf%3Atype+rdfs%3AClass%0A++++OPTIONAL%0A++++++%7B+akt%3AJournal+rdf%3Atype+rdf%3AProperty+%7D%0A++%7D%0A+
+#-------------------------------------------------------
+Query No: 56
+Query Type: ASK 
+Results Size: 1 
+Basic Graph Patterns (BGPs): 0
+Triple Patterns: 0
+Join Vertices: 0
+Mean Join Vertices Degree: 0 
+Mean triple patterns selectivity: 0.0
+UNION: No 
+DISTINCT: No 
+ORDER BY: No 
+REGEX: No 
+LIMIT: No 
+OFFSET: No 
+OPTIONAL: No 
+FILTER: No 
+GROUP BY: No 
+Query String: ASK+%7B%7D+
+#--end---
