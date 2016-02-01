@@ -27,28 +27,24 @@ SWDF = Semantic Web Dog Food
 You can checkout the source code from https://github.com/saleem-muhammad/feasible/.
 
 ###Generating FEASIBLE Benchmarks
-Package org.aksw.simba.benchmark.startup
-
-Class QuerySelecter
+* Package org.aksw.simba.benchmark.startup
+* Class QuerySelecter
 
 Select query log, the number of queries and your custom filters and execute. See the startup file for examples and detailed description.
 
 #####Triple Stores Evaluation
-Package org.aksw.simba.benchmark.startup
-
-Class QueryEvaluation
+* Package org.aksw.simba.benchmark.startup
+* Class QueryEvaluation
 
 ##### FEASIBLE Clean Queries File Generation
-Package org.aksw.simba.benchmark.log.operations
-
-Class VirtuosoLogReader, SesameLogReader
+* Package org.aksw.simba.benchmark.log.operations
+* Class VirtuosoLogReader, SesameLogReader
 
 #####Query Log RDFization
 This you can use to convert query logs into RDF. The query log data can be queried from SPARQL endpoint given at http://lsq.akws.org/sparql. This is yet not part of FEASIBLE. In future, FEASIBLE will directly query this endpoint to get the list of clean queries instead of first cleaning the log and taking the resulting clean queries file as input.
 
-Package org.aksw.simba.benchmark.log.operations
-
-Class LogRDFizer
+* Package org.aksw.simba.benchmark.log.operations
+* Class LogRDFizer
 
 ###Evaluation Results and Timeouts Queries
 
