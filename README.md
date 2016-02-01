@@ -56,7 +56,7 @@ Our complete evaluation results can be downloaded from [here](https://drive.goog
 
 ###Benchmark Contributors
 
-[Muhammad Saleem](https://sites.google.com/site/saleemsweb/) (AKSW, University of Leipzig)
-[Qaiser Mehmood](https://www.deri.ie/users/qaiser-mehmood/) (INSIGHT @ NUI Galway)
-[Axel-Cyrille Ngonga Ngomo](http://aksw.org/AxelNgonga.html) (AKSW, University of Leipzig)
-[Richard Cyganiak](http://richard.cyganiak.de/) (TopQuadrant)
+* [Muhammad Saleem](https://sites.google.com/site/saleemsweb/) (AKSW, University of Leipzig)
+* [Qaiser Mehmood](https://www.deri.ie/users/qaiser-mehmood/) (INSIGHT @ NUI Galway)
+* [Axel-Cyrille Ngonga Ngomo](http://aksw.org/AxelNgonga.html) (AKSW, University of Leipzig)
+* [Richard Cyganiak](http://richard.cyganiak.de/) (TopQuadrant)
