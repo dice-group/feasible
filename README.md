@@ -18,13 +18,13 @@ Here you can download all the data required for our evaluation setup and results
 
 | FEASIBLE Benchmarks | DBpedia 3.5.1 Dump | SWDF Dump | DBpedia 3.5.1 Logs | SWDF Logs| DBpedia 3.5.1 Clean Queries | SWDF Clean Queries|
 |:------------------------|:-----------------------|:--------------|:-----------------------|:-------------|:---------------------------------|:----------------------|
-| Download | Download | Download | Download | Download | Download | Download | 
+| [Download](https://drive.google.com/file/d/0B1tUDhWNTjO-U1N2UldvbXpRWDQ/view?usp=sharing) | [Download](http://downloads.dbpedia.org/3.5.1/en/) | [Download](https://drive.google.com/file/d/0B1tUDhWNTjO-cjBqUG1BZF9RTnM/view?usp=sharing) | [Download](http://goo.gl/KyVusI) | [Download](http://goo.gl/3q52Ka) | [Download](https://drive.google.com/file/d/0B1tUDhWNTjO-Wmx5UzNIdWg1ckE/view?usp=sharing) | [Download](https://drive.google.com/file/d/0B1tUDhWNTjO-enhhakNTdE1pY2s/view?usp=sharing) | 
 
 SWDF = Semantic Web Dog Food
 
 ###Source Code, Startup Information
 
-You can checkout the source code from. svn checkout http://feasible.googlecode.com/svn/trunk/ feasible-read-only.
+You can checkout the source code from https://github.com/saleem-muhammad/feasible/.
 
 ###Generating FEASIBLE Benchmarks
 Package org.aksw.simba.benchmark.startup
@@ -35,16 +35,14 @@ Select query log, the number of queries and your custom filters and execute. See
 
 #####Triple Stores Evaluation
 Package org.aksw.simba.benchmark.startup
+Class QueryEvaluation
 
-#####Class QueryEvaluation
-
-FEASIBLE Clean Queries File Generation
+##### FEASIBLE Clean Queries File Generation
 Package org.aksw.simba.benchmark.log.operations
-
 Class VirtuosoLogReader, SesameLogReader
 
-Query Log RDFization
-This you can use to convert query logs into RDF. The query log data can be queried from SPARQL endpoint given at http://titan.informatik.uni-leipzig.de:3333/sparql. This is yet not part of FEASIBLE. In future, FEASIBLE will directly query this endpoint to get the list of clean queries instead of first cleaning the log and taking the resulting clean queries file as input.
+#####Query Log RDFization
+This you can use to convert query logs into RDF. The query log data can be queried from SPARQL endpoint given at http://lsq.akws.org/sparql. This is yet not part of FEASIBLE. In future, FEASIBLE will directly query this endpoint to get the list of clean queries instead of first cleaning the log and taking the resulting clean queries file as input.
 
 Package org.aksw.simba.benchmark.log.operations
 
