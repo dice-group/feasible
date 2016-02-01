@@ -52,11 +52,11 @@ Class LogRDFizer
 
 ###Evaluation Results and Timeouts Queries
 
-Our complete evaluation results can be downloaded from here. The timeouts queries for each of the triple store is given here.
+Our complete evaluation results can be downloaded from [here](https://drive.google.com/file/d/0BzemFAUFXpqOMm5MNXFVQzU4TDA/view?usp=sharing). The timeouts queries for each of the triple store is given [here](https://drive.google.com/file/d/0BzemFAUFXpqOdHVoY1VZcDE0VE0/view?usp=sharing).
 
 ###Benchmark Contributors
 
-Muhammad Saleem (AKSW, University of Leipzig)
-Qaiser Mehmood (INSIGHT @ NUI Galway)
-Axel-Cyrille Ngonga Ngomo (AKSW, University of Leipzig)
-Richard Cyganiak (TopQuadrant)
+[Muhammad Saleem](https://sites.google.com/site/saleemsweb/) (AKSW, University of Leipzig)
+[Qaiser Mehmood](https://www.deri.ie/users/qaiser-mehmood/) (INSIGHT @ NUI Galway)
+[Axel-Cyrille Ngonga Ngomo](http://aksw.org/AxelNgonga.html) (AKSW, University of Leipzig)
+[Richard Cyganiak](http://richard.cyganiak.de/) (TopQuadrant)
