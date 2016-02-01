@@ -29,16 +29,18 @@ You can checkout the source code from https://github.com/saleem-muhammad/feasibl
 ###Generating FEASIBLE Benchmarks
 Package org.aksw.simba.benchmark.startup
 
-######Class QuerySelecter
+Class QuerySelecter
 
 Select query log, the number of queries and your custom filters and execute. See the startup file for examples and detailed description.
 
 #####Triple Stores Evaluation
 Package org.aksw.simba.benchmark.startup
+
 Class QueryEvaluation
 
 ##### FEASIBLE Clean Queries File Generation
 Package org.aksw.simba.benchmark.log.operations
+
 Class VirtuosoLogReader, SesameLogReader
 
 #####Query Log RDFization
@@ -48,7 +50,7 @@ Package org.aksw.simba.benchmark.log.operations
 
 Class LogRDFizer
 
-Evaluation Results and Timeouts Queries
+###Evaluation Results and Timeouts Queries
 
 Our complete evaluation results can be downloaded from here. The timeouts queries for each of the triple store is given here.
 
