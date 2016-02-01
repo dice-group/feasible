@@ -4,7 +4,7 @@ FEASIBLE is a customized SPARQL benchmark generation framework based on query lo
 
 ### Online Demo
 
-The online demo of FEASIBLE is available here along with usage examples. The demo may take some time to load, so please be patient.
+The online demo of FEASIBLE is available [here](http://feasible.aksw.org) along with usage examples. The demo may take some time to load, so please be patient.
 
 ####Local Demo
 
