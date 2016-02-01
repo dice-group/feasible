@@ -10,7 +10,7 @@ The online demo of FEASIBLE is available [here](http://feasible.aksw.org) along 
 
 If for any reason the online demo is not working, you can start it locally on your computer machine by following the procedure given below.
 
-Download FEASIBLE-online from here. Unzip the file and go to feasible-beckend folder. Start the start-feasible-jetty.jar from command prompt or shell. You can start the server by using the command (java -jar start-feasible-jetty.jar). Once the server is started, you can start the demo by clicking index.html file in feasible folder.
+Download FEASIBLE-online from [here](https://drive.google.com/file/d/0Bw1get4GUTJrbHA3Sl9fdThpN2s/view?usp=sharing). Unzip the file and go to feasible-beckend folder. Start the start-feasible-jetty.jar from command prompt or shell. You can start the server by using the command (java -jar start-feasible-jetty.jar). Once the server is started, you can start the demo by clicking index.html file in feasible folder.
 
 ### Downloads
 
