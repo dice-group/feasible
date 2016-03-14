@@ -1,4 +1,4 @@
-# FEASIBLE: A Featured-Based SPARQL Benchmark Generation Framework
+# FEASIBLE: A Feature-Based SPARQL Benchmark Generation Framework
 
 FEASIBLE is a customized SPARQL benchmark generation framework based on query logs of the RDF datasets. Complete details can be found in our [ISWC 2015 paper](http://svn.aksw.org/papers/2015/ISWC_FEASIBLE/public.pdf). 
 
