@@ -1,3 +1,5 @@
+*An extended version of the FEASIBLE is coming soon where we used KMean++, Aglomerative, and Hybrid of DBSCAN+KMean++ techniques. Stay tuned!*
+
 # FEASIBLE: A Feature-Based SPARQL Benchmark Generation Framework
 
 FEASIBLE is a customized SPARQL benchmark generation framework based on query logs of the RDF datasets. Complete details can be found in our [ISWC 2015 paper](http://svn.aksw.org/papers/2015/ISWC_FEASIBLE/public.pdf). 
