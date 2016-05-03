@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.Base64;
 import java.util.Map;
 import java.util.Set;
 
@@ -142,7 +143,7 @@ public class LogRDFizer {
 			String txt=prts[0].replace(".", "34x49") ;
 			String key="key phrase used for XOR-ing";
 			txt=EncryptUtils.xorMessage( txt, key );
-			String encoded=EncryptUtils.base64encode( txt ); 
+			String encoded=Base64.getEncoder().encodeToString( txt.getBytes() ); 
 			encoded = encoded.replace("=", "-");
 			encoded = encoded.replace("+", "-");
 		   	queryStats = queryStats + "lsqrd:q"+(queryNo-1)+"-e"+j+ " lsqv:agent lsqr:A-"+encoded+"  ; dct:issued \""+prts[1]+"\"^^xsd:dateTimeStamp . \n";
