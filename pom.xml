@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.aksw.feasible</groupId>
+	<groupId>org.aksw.simba.feasible</groupId>
 	<artifactId>feasible-core</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -14,8 +14,8 @@
 	<url>https://github.com/AKSW/Feasible</url>
 
 	<issueManagement>
-		<url>https://github.com/AKSW/spring-json/issues</url>
-		<system>GitHub</system>
+		<url>https://github.com/AKSW/feasible/issues</url>
+		<system>GitHub Issue Management</system>
 	</issueManagement>
 
 	<licenses>
@@ -27,19 +27,34 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/AKSW/spring-json</url>
-		<connection>scm:git:git://github.com/AKSW/spring-json.git</connection>
-		<developerConnection>scm:git:git@github.com:AKSW/spring-json.git</developerConnection>
+		<url>https://github.com/AKSW/feasible</url>
+		<connection>scm:git:git://github.com/AKSW/feasible.git</connection>
+		<developerConnection>scm:git:git@github.com:AKSW/feasible.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<developers>
 		<developer>
-			<name>Muhammad Saleem, Axel Ngonga</name>
-			<url>http://aksw.org/MuhammadSaleem, http://aksw.org/AxelNgonga</url>
+			<name>Muhammad Saleem</name>
+			<url>http://aksw.org/MuhammadSaleem</url>
+			<roles><role>Lead developer</role></roles>
 			<organization>AKSW</organization>
 			<organizationUrl>http://aksw.org</organizationUrl>
 		</developer>
+        <developer>
+            <name>Axel Ngonga</name>
+            <url>http://aksw.org/AxelNgonga</url>
+            <roles><role>Supervisor</role></roles>
+            <organization>AKSW</organization>
+            <organizationUrl>http://aksw.org</organizationUrl>
+        </developer>
+        <developer>
+            <name>Claus Stadler</name>
+            <url>http://aksw.org/ClausStadler</url>
+            <roles><role>Contributor</role></roles>
+            <organization>AKSW</organization>
+            <organizationUrl>http://aksw.org</organizationUrl>
+        </developer>
 	</developers>
 
 	<properties>
