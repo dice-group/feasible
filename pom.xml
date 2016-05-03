@@ -37,24 +37,30 @@
 		<developer>
 			<name>Muhammad Saleem</name>
 			<url>http://aksw.org/MuhammadSaleem</url>
-			<roles><role>Lead developer</role></roles>
+			<roles>
+				<role>Lead developer</role>
+			</roles>
 			<organization>AKSW</organization>
 			<organizationUrl>http://aksw.org</organizationUrl>
 		</developer>
-        <developer>
-            <name>Axel Ngonga</name>
-            <url>http://aksw.org/AxelNgonga</url>
-            <roles><role>Supervisor</role></roles>
-            <organization>AKSW</organization>
-            <organizationUrl>http://aksw.org</organizationUrl>
-        </developer>
-        <developer>
-            <name>Claus Stadler</name>
-            <url>http://aksw.org/ClausStadler</url>
-            <roles><role>Contributor</role></roles>
-            <organization>AKSW</organization>
-            <organizationUrl>http://aksw.org</organizationUrl>
-        </developer>
+		<developer>
+			<name>Axel Ngonga</name>
+			<url>http://aksw.org/AxelNgonga</url>
+			<roles>
+				<role>Supervisor</role>
+			</roles>
+			<organization>AKSW</organization>
+			<organizationUrl>http://aksw.org</organizationUrl>
+		</developer>
+		<developer>
+			<name>Claus Stadler</name>
+			<url>http://aksw.org/ClausStadler</url>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+			<organization>AKSW</organization>
+			<organizationUrl>http://aksw.org</organizationUrl>
+		</developer>
 	</developers>
 
 	<properties>
@@ -405,11 +411,11 @@
 			<name>AKSW Snapshot Repository</name>
 			<url>http://maven.aksw.org/archiva/repository/snapshots</url>
 		</repository>
-        <repository>
-            <id>maven.aksw.internal</id>
-            <name>AKSW Release Repository</name>
-            <url>http://maven.aksw.org/archiva/repository/internal</url>
-        </repository>
+		<repository>
+			<id>maven.aksw.internal</id>
+			<name>AKSW Release Repository</name>
+			<url>http://maven.aksw.org/archiva/repository/internal</url>
+		</repository>
 	</repositories>
 
 
