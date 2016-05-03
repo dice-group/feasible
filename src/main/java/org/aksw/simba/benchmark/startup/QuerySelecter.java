@@ -38,7 +38,7 @@ public class QuerySelecter {
 //             	System.out.println(queryNo+"------------------\n"+qry);
 //             	queryNo++;
 //             	}
-				String outputDir = "../FEASIBLE-Core/benchmarks/";
+				String outputDir = "benchmarks/";
 				Queries.printBenchmarkQueries(queries,outputDir);
 				System.out.println("\n-----\nBenchmark details saved to "+outputDir+"\nBenchmark generation time (sec): "+(System.currentTimeMillis()-curTime)/1000);
 				Double similarityScore = Similarity.getSimilarityScore(normalizedVectors,benchmarkQueriesIds);
