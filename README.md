@@ -12,6 +12,7 @@ java -jar feasible.jar <input clean queries file> <no. of queries> <optional cla
 For example, java -jar feasible.jar SWDF-CleanQueries.txt 5 "(OPTIONAL AND DISTINCT) OR (UNION)" "(ResultSize >= 100 AND TriplePatternsCount >= 2 AND TriplePatternsCount <= 5)"
 
 ```
+The set of SPARQL clauses which can be used in the clause filter conditions (i.e., argument no. 3) are UNION, FILTER, OPTIONAL, DISTINCT, ORDERBY, GROUPBY, LIMIT, REGEX, and OFFSET. The set of SPARQL features that you can use in the feature filter condition (i.e., argument no. 4) are triplePatternCount, resultSize, meanJoinVerticesDegreee, meanTriplePatternSelectivity, BGPs, and runTime. Note the runTime is in milliseconeds. 
 ### Online Demo
 
 The online demo of FEASIBLE is available [here](http://feasible.aksw.org) along with usage examples. The demo may take some time to load, so please be patient.
