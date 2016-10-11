@@ -1,9 +1,17 @@
+
 *An extended version of the FEASIBLE is coming soon where we used KMean++, Aglomerative, and Hybrid of DBSCAN+KMean++ techniques. Stay tuned!*
 
 # FEASIBLE: A Feature-Based SPARQL Benchmark Generation Framework
 
 FEASIBLE is a customized SPARQL benchmark generation framework based on query logs of the RDF datasets. Complete details can be found in our [ISWC 2015 paper](http://svn.aksw.org/papers/2015/ISWC_FEASIBLE/public.pdf). 
 
+### For ISWC 2016 Tutorial (Running FEASIBLE from command line)
+Download the [feasible jar](https://drive.google.com/file/d/0Bw1get4GUTJra1VBVTI3QzVfck0/view?usp=sharing) and extract to a directory. 
+'''
+--- Requried input format--- 
+ java -jar feasible.jar <input clean queries file> <no. of queries> <optional clause filter> <optional feature filter>
+For example, java -jar feasible.jar SWDF-CleanQueries.txt 5 "(OPTIONAL AND DISTINCT) OR (UNION)" "(ResultSize >= 100 AND TriplePatternsCount >= 2 AND TriplePatternsCount <= 5)"
+'''
 ### Online Demo
 
 The online demo of FEASIBLE is available [here](http://feasible.aksw.org) along with usage examples. The demo may take some time to load, so please be patient.
