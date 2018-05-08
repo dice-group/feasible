@@ -13,7 +13,11 @@ java -jar feasible.jar  -f <queriesFile> -n <no of Queries> -cf <optional clause
 For example,
 java -jar feasible.jar -f DBpedia3.5.1-CleanQueries.txt -n 5 
 
-will generate a benchmark of 5 qeuries from DBpedia log. The queries can be of form SELECT, CONSTRUCT, ASK, and DESCRIBE. 
+will generate a benchmark of 5 qeuries from DBpedia log. The queries can be of form SELECT, CONSTRUCT, ASK, or DESCRIBE. 
+
+java -jar feasible.jar -f DBpedia3.5.1-CleanQueries.txt -n 5 -tf "SELECT"
+
+will generate only SELECT queries benchmark of size 5 from DBpedia log. 
 
 java -Xmx16g -jar feasible.jar -f SWDF-CleanQueries.txt -n 15 -cf "(OPTIONAL AND DISTINCT) OR (UNION)" -ff "(ResultSize >= 100 AND TriplePatternsCount >= 2 AND TriplePatternsCount <= 5)" -tf "SELECT OR CONSTRUCT"
 
