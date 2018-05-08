@@ -5,11 +5,19 @@
 
 FEASIBLE is a customized SPARQL benchmark generation framework based on query logs of the RDF datasets. Complete details can be found in our [ISWC 2015 paper](http://svn.aksw.org/papers/2015/ISWC_FEASIBLE/public.pdf). 
 
-### For ISWC 2016 Tutorial (Running FEASIBLE from command line)
-Download the [feasible jar](https://drive.google.com/file/d/0Bw1get4GUTJra1VBVTI3QzVfck0/view?usp=sharing) and extract to a directory. The command line input format is given below. 
+### Running FEASIBLE from command line
+Download the [feasible zip](https://drive.google.com/file/d/1AwiLMPubWfE4UB3Q0E2-UHb4awO2c0oV/view?usp=sharing) and extract to a directory. The command line input format is given below. 
 ```
-java -jar feasible.jar <input clean queries file> <no. of queries> <optional clause filter> <optional feature filter>
-For example, java -jar feasible.jar SWDF-CleanQueries.txt 5 "(OPTIONAL AND DISTINCT) OR (UNION)" "(ResultSize >= 100 AND TriplePatternsCount >= 2 AND TriplePatternsCount <= 5)"
+java -jar feasible.jar  -f <queriesFile> -n <no of Queries> -cf <optional clause filter> -ff <optional feature filter> -tf <otional query type filter>
+
+For example,
+java -jar feasible.jar -f DBpedia3.5.1-CleanQueries.txt -n 5 
+
+will generate a benchmark of 5 qeuries from DBpedia log. The queries can be of form SELECT, CONSTRUCT, ASK, and DESCRIBE. 
+
+java -Xmx16g -jar feasible.jar -f SWDF-CleanQueries.txt -n 15 -cf "(OPTIONAL AND DISTINCT) OR (UNION)" -ff "(ResultSize >= 100 AND TriplePatternsCount >= 2 AND TriplePatternsCount <= 5)" -tf "SELECT OR CONSTRUCT"
+
+will generate a benchmark of 15 queries from SWDF queries log. The queries will be only SELECT or CONSTRUCT and must either include both OPTIONAL and DISTINCT or contains UNION. Furthermore, the resultsize should be greater than 100 and Triple patterns should be greater or equal to 2 and less of equal to 5. 
 
 ```
 The set of SPARQL clauses which can be used in the clause filter conditions (i.e., argument no. 3) are UNION, FILTER, OPTIONAL, DISTINCT, ORDERBY, GROUPBY, LIMIT, REGEX, and OFFSET. The set of SPARQL features that you can use in the feature filter condition (i.e., argument no. 4) are triplePatternCount, resultSize, meanJoinVerticesDegreee, meanTriplePatternSelectivity, BGPs, and runTime. Note the runTime is in milliseconeds. 
