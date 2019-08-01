@@ -1,5 +1,5 @@
 
-*An extended version of the FEASIBLE is coming soon where we used KMean++, Aglomerative, and Hybrid of DBSCAN+KMean++ techniques. Stay tuned!*
+*An extended version of the FEASIBLE is is available from https://github.com/dice-group/SPARQL-Bench. It is highly recommended to use the new repository for Benchmark generation*
 
 # FEASIBLE: A Feature-Based SPARQL Benchmark Generation Framework
 
